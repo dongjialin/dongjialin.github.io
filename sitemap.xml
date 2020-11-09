@@ -4,7 +4,7 @@
   <url>
     <loc>http://blog.dongjialin.top/2020/11/07/go1/</loc>
     
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2020-11-09</lastmod>
     
   </url>
   
@@ -25,7 +25,7 @@
 
   <url>
     <loc>http://blog.dongjialin.top/</loc>
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2020-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,14 +33,14 @@
   
   <url>
     <loc>http://blog.dongjialin.top/tags/Golang/</loc>
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2020-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://blog.dongjialin.top/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2020-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
