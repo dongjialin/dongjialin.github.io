@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2020-11-10T06:16:12.971Z</updated>
+  <updated>2020-11-10T06:30:04.239Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -17,14 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>leetcode</title>
+    <title>leetcode刷题</title>
     <link href="http://blog.dongjialin.top/2020/11/10/leetcode/"/>
     <id>http://blog.dongjialin.top/2020/11/10/leetcode/</id>
     <published>2020-11-10T06:04:08.000Z</published>
-    <updated>2020-11-10T06:16:12.971Z</updated>
+    <updated>2020-11-10T06:30:04.239Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近这几天一直在leetcode刷题，正好顺便把学习的golang联系一下。<br>刷题从先从简单的开始，慢慢开通自己许久没动的脑子，有点固化的思维。<br>许多面试题的算法题，这上边也有，为以后的面试好好做准备。</p>]]></content>
     
     
-    <summary type="html">刷题刷题刷题</summary>
+    <summary type="html">刷题，刷题，刷题</summary>
     
     
     
@@ -57,7 +59,9 @@
     <link href="http://blog.dongjialin.top/2020/11/06/hello-world/"/>
     <id>http://blog.dongjialin.top/2020/11/06/hello-world/</id>
     <published>2020-11-06T07:27:12.000Z</published>
-    <updated>2020-11-07T09:59:31.827Z</updated>
+    <updated>2020-11-10T06:30:35.526Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个小站就一下午的时间搭起来的，为了上杰克叔的小圈子，哈哈～</p>]]></content>
     
     
     <summary type="html">欢迎来到我的小站，我会在这里更新一些我的碎碎念，欢迎大家。</summary>
