@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2020-11-26T12:55:11.392Z</updated>
+  <updated>2021-03-11T02:51:42.672Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github访问小技巧</title>
+    <link href="http://blog.dongjialin.top/2021/03/11/github/"/>
+    <id>http://blog.dongjialin.top/2021/03/11/github/</id>
+    <published>2021-03-11T02:49:25.000Z</published>
+    <updated>2021-03-11T02:51:42.672Z</updated>
+    
+    <content type="html"><![CDATA[<p>访问以下地址，<br><a href="https://ipaddress.com/">https://ipaddress.com</a><br>获取到下面几个域名的ip，放到hosts里<br>github.com<br>assets-cdn.github.com<br>github.global.ssl.fastly.net<br>完成🎉</p>]]></content>
+    
+    
+    <summary type="html">github访问不了，怎么办</summary>
+    
+    
+    
+    
+    <category term="碎碎念" scheme="http://blog.dongjialin.top/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>浏览器输入url并按下回车后，发生了什么</title>
