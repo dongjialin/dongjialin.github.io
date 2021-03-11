@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2021-03-11T02:51:42.672Z</updated>
+  <updated>2021-03-11T03:02:43.612Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.dongjialin.top/2021/03/11/github/"/>
     <id>http://blog.dongjialin.top/2021/03/11/github/</id>
     <published>2021-03-11T02:49:25.000Z</published>
-    <updated>2021-03-11T02:51:42.672Z</updated>
+    <updated>2021-03-11T03:02:43.612Z</updated>
     
-    <content type="html"><![CDATA[<p>访问以下地址，<br><a href="https://ipaddress.com/">https://ipaddress.com</a><br>获取到下面几个域名的ip，放到hosts里<br>github.com<br>assets-cdn.github.com<br>github.global.ssl.fastly.net<br>完成🎉</p>]]></content>
+    <content type="html"><![CDATA[<p>访问以下地址，<br><a href="https://ipaddress.com/">https://ipaddress.com</a><br>或者<br><a href="http://ip.tool.chinaz.com/github.com">http://ip.tool.chinaz.com/github.com</a><br>获取到下面几个域名的ip，放到hosts里<br>github.com<br>assets-cdn.github.com<br>github.global.ssl.fastly.net<br>完成🎉</p>]]></content>
     
     
     <summary type="html">github访问不了，怎么办</summary>
