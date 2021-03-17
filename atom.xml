@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2021-03-11T03:02:43.612Z</updated>
+  <updated>2021-03-17T07:31:35.029Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>in_array优化</title>
+    <link href="http://blog.dongjialin.top/2021/03/17/in-array/"/>
+    <id>http://blog.dongjialin.top/2021/03/17/in-array/</id>
+    <published>2021-03-17T07:11:16.000Z</published>
+    <updated>2021-03-17T07:31:35.029Z</updated>
+    
+    <content type="html"><![CDATA[<p>in_array这个函数，在数据量大的情况下，效率会变的特别低<br>例如比较字符型数字的时候，两个字符型数字串先转换为长整型再进行比较，虽然加上第三参数true，转变成严格比较，会快一些，但还远远达不到优化的目的。</p><p>举例如下：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">//</span>计算时间</span><br><span class="line"><span class="keyword">function</span> microtime()</span><br><span class="line">&#123;</span><br><span class="line">    list(<span class="variable">$usec</span>, <span class="variable">$sec</span>) = explode(<span class="string">&#x27; &#x27;</span>, microtime());</span><br><span class="line">    return ((float)<span class="variable">$usec</span> + (float)<span class="variable">$sec</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="regexp">//</span>初始化数组(int和str类型)</span><br><span class="line"><span class="variable">$int_arr</span> = [];</span><br><span class="line"><span class="variable">$str_arr</span> = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span> = <span class="number">0</span>; <span class="variable">$i</span> &lt; <span class="number">30000</span>; <span class="variable">$i</span>++) &#123;</span><br><span class="line">    <span class="variable">$int_arr</span>[] = <span class="variable">$i</span>;</span><br><span class="line">    <span class="variable">$str_arr</span>[] = <span class="string">&quot;&#123;$i&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$int_arr1</span> = array_flip(<span class="variable">$int_arr</span>);</span><br><span class="line"><span class="variable">$str_arr1</span> = array_flip(<span class="variable">$str_arr</span>);</span><br><span class="line"></span><br><span class="line"><span class="regexp">//</span>执行</span><br><span class="line"><span class="variable">$starttime</span> = microtime();</span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span> = <span class="number">0</span>; <span class="variable">$i</span> &lt; <span class="number">50000</span>; <span class="variable">$i</span>++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (in_array(<span class="number">1000</span>, <span class="variable">$int_arr</span>)) &#123;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="regexp">//</span>  <span class="keyword">if</span> (isset(<span class="variable">$int_arr1</span>[<span class="number">18000</span>])) &#123;</span><br><span class="line"><span class="regexp">//</span>      <span class="keyword">continue</span>;</span><br><span class="line"><span class="regexp">//</span>  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$endtime</span> = microtime();</span><br><span class="line">echo <span class="string">&#x27;耗时：&#x27;</span> . (<span class="variable">$endtime</span> - <span class="variable">$starttime</span>);</span><br></pre></td></tr></table></figure><p>所以，我们在数据多的时候，利用array_flip()函数，调换数组的key和value,然后用isset()函数去搜索。速度会得到大幅度的提升。    </p>]]></content>
+    
+    
+    <summary type="html">每天一个小技巧</summary>
+    
+    
+    
+    
+    <category term="PHP" scheme="http://blog.dongjialin.top/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>github访问小技巧</title>
