@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2021-03-17T07:31:35.029Z</updated>
+  <updated>2021-04-10T07:09:05.340Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP高精度计算函数</title>
+    <link href="http://blog.dongjialin.top/2021/04/10/phpcalculation/"/>
+    <id>http://blog.dongjialin.top/2021/04/10/phpcalculation/</id>
+    <published>2021-04-10T07:07:11.000Z</published>
+    <updated>2021-04-10T07:09:05.340Z</updated>
+    
+    <content type="html"><![CDATA[<p>bcadd — 加法<br>bcsub — 减法<br>bcmul — 乘法<br>bcdiv — 相除<br>bccomp — 比较<br>bcmod — 求余数<br>bcpow — 次方<br>bcpowmod — 先次方然后求余数<br>bcscale — 给所有函数设置小数位精度<br>bcsqrt — 求平方根</p>]]></content>
+    
+    
+    <summary type="html">小技巧</summary>
+    
+    
+    
+    
+    <category term="PHP" scheme="http://blog.dongjialin.top/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>in_array优化</title>
