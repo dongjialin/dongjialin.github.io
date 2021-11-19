@@ -6,7 +6,7 @@
   <link href="http://blog.dongjialin.top/atom.xml" rel="self"/>
   
   <link href="http://blog.dongjialin.top/"/>
-  <updated>2021-11-19T03:54:45.055Z</updated>
+  <updated>2021-11-19T05:52:01.675Z</updated>
   <id>http://blog.dongjialin.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo_start</title>
+    <link href="http://blog.dongjialin.top/2021/11/19/hexo-start/"/>
+    <id>http://blog.dongjialin.top/2021/11/19/hexo-start/</id>
+    <published>2021-11-19T03:56:40.000Z</published>
+    <updated>2021-11-19T05:52:01.675Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">init</span> [名称]</span><br><span class="line">新建一个文件夹，就是项目啦</span><br></pre></td></tr></table></figure><h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type"></span>[名称]</span><br><span class="line">新建一个文件，就是页面</span><br></pre></td></tr></table></figure><h3 id="new-1"><a href="#new-1" class="headerlink" title="new"></a>new</h3><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type"></span>[名称]</span><br><span class="line">新建一个文件，就是页面</span><br></pre></td></tr></table></figure><h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span>  简写 hexo g</span><br><span class="line">生成静态文件。</span><br></pre></td></tr></table></figure><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">deploy</span>  简写 hexo d</span><br><span class="line">部署网站。</span><br></pre></td></tr></table></figure><h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server </span><br><span class="line">启动服务器。默认情况下，访问网址为： http:<span class="regexp">//</span>localhost:<span class="number">4000</span>/。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">hexo简单的使用（主要我老忘，哈哈</summary>
+    
+    
+    
+    
+    <category term="技术" scheme="http://blog.dongjialin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>golang时间戳转换</title>
