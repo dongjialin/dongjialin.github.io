@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>golang小笔记 | 董家麟的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="运行用时12start :&#x3D; time.Now()secs :&#x3D; time.Since(start).Seconds() 将字符串 “hello” 转换为 “cello”1234s :&#x3D; &quot;hello&quot;c :&#x3D; []byte(s)c[0] &#x3D; &amp;#x27;c&amp;#x27;s2 :&#x3D; string(c) &#x2F;&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="golang小笔记">
+<meta property="og:url" content="https://dongjialin.github.io/2020/11/07/golang%E5%B0%8F%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="董家麟的博客">
+<meta property="og:description" content="运行用时12start :&#x3D; time.Now()secs :&#x3D; time.Since(start).Seconds() 将字符串 “hello” 转换为 “cello”1234s :&#x3D; &quot;hello&quot;c :&#x3D; []byte(s)c[0] &#x3D; &amp;#x27;c&amp;#x27;s2 :&#x3D; string(c) &#x2F;&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-29T14:02:50.169Z">
+<meta property="article:author" content="董家麟">
+<meta property="article:tag" content="Golang">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="董家麟的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">董家麟的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">分享技术与生活</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://dongjialin.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-golang小笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/07/golang%E5%B0%8F%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2020-11-06T16:00:00.000Z" itemprop="datePublished">2020-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      golang小笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="运行用时"><a href="#运行用时" class="headerlink" title="运行用时"></a><a href="#%E8%BF%90%E8%A1%8C%E7%94%A8%E6%97%B6"></a>运行用时</h3><p>1<br>2<br>start :&#x3D; time.Now()<br>secs :&#x3D; time.Since(start).Seconds()</p>
+<h3 id="将字符串-“hello”-转换为-“cello”"><a href="#将字符串-“hello”-转换为-“cello”" class="headerlink" title="将字符串 “hello” 转换为 “cello”"></a><a href="#%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2-%E2%80%9Chello%E2%80%9D-%E8%BD%AC%E6%8D%A2%E4%B8%BA-%E2%80%9Ccello%E2%80%9D"></a>将字符串 “hello” 转换为 “cello”</h3><p>1<br>2<br>3<br>4<br>s :&#x3D; &quot;hello&quot;<br>c :&#x3D; []byte(s)<br>c[0] &#x3D; &#x27;c&#x27;<br>s2 :&#x3D; string(c) &#x2F;&#x2F; s2 &#x3D;&#x3D; &quot;cello&quot;</p>
+<h3 id="切片（php中类似索引数组）"><a href="#切片（php中类似索引数组）" class="headerlink" title="切片（php中类似索引数组）"></a><a href="#%E5%88%87%E7%89%87%EF%BC%88php%E4%B8%AD%E7%B1%BB%E4%BC%BC%E7%B4%A2%E5%BC%95%E6%95%B0%E7%BB%84%EF%BC%89"></a>切片（php中类似索引数组）</h3><p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>当相关数组还没有定义时，我们可以使用 make() 函数来创建一个切片 同时创建好相关数组：var slice1 []type &#x3D; make([]type, len)。<br>也可以简写为 slice1 :&#x3D; make([]type, len)，这里 len 是数组的长度并且也是 slice 的初始长度。<br>所以定义 s2 :&#x3D; make([]int, 10)，那么 cap(s2) &#x3D;&#x3D; len(s2) &#x3D;&#x3D; 10。<br>make 接受 2 个参数：元素的类型以及切片的元素个数。<br>如果你想创建一个 slice1，它不占用整个数组，而只是占用以 len 为个数个项，那么只要：slice1 :&#x3D; make([]type, len, cap)。<br>make 的使用方式是：func make([]T, len, cap)，其中 cap 是可选参数。<br>所以下面两种方法可以生成相同的切片:<br>make([]int, 50, 100)<br>new([100]int)[0:50]</p>
+<h3 id="map（php中类似关联数组）"><a href="#map（php中类似关联数组）" class="headerlink" title="map（php中类似关联数组）"></a><a href="#map%EF%BC%88php%E4%B8%AD%E7%B1%BB%E4%BC%BC%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84%EF%BC%89"></a>map（php中类似关联数组）</h3><p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>map 是 引用类型 的： 内存用 make 方法来分配。<br>map 的初始化：var map1 &#x3D; make(map[keytype]valuetype)。<br>或者简写为：map1 :&#x3D; make(map[keytype]valuetype)。<br>上面例子中的 mapCreated 就是用这种方式创建的：mapCreated :&#x3D; make(map[string]float32)。<br>相当于：mapCreated :&#x3D; map[string]float32&#123;&#125;。<br>mapAssigned 也是 mapList 的引用，对 mapAssigned 的修改也会影响到 mapLit 的值。<br>不要使用 new，永远用 make 来构造 map<br>map1 :&#x3D; make(map[string]int)<br>map1[&quot;New Delhi&quot;] &#x3D; 55<br>map1[&quot;Beijing&quot;] &#x3D; 20<br>map1[&quot;Washington&quot;] &#x3D; 25</p>
+<h3 id="转json"><a href="#转json" class="headerlink" title="转json"></a><a href="#%E8%BD%ACjson"></a>转json</h3><p>1<br>json, _ :&#x3D; json.Marshal(array)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dongjialin.github.io/2020/11/07/golang%E5%B0%8F%E7%AC%94%E8%AE%B0/" data-id="cmpqzs4oi0005yg8sfiiwc51w" data-title="golang小笔记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Golang/" rel="tag">Golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/11/10/leetcode%E5%88%B7%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          leetcode刷题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/06/%E4%BD%A0%E5%A5%BD%E6%9C%8B%E5%8F%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">你好，朋友</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Golang/" rel="tag">Golang</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/" rel="tag">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" rel="tag">碎碎念</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Golang/" style="font-size: 15px;">Golang</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/PHP/" style="font-size: 15px;">PHP</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 20px;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 10px;">教程</a> <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" style="font-size: 10px;">碎碎念</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/05/">五月 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">十一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">四月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/05/29/Hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Hexo 常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2026/05/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/19/golang%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%8D%A2/">golang时间戳转换</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/19/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/">hexo相关操作</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/10/PHP%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/">PHP高精度计算函数</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 董家麟<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
