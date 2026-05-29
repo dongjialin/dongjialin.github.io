@@ -7,7 +7,7 @@ title: 折纸屋
 subtitle: '分享技术与生活'
 description: '一个专注于技术分享的博客'
 keywords:
-author: 董家麟
+author: 董佳林
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: maupassant-hexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

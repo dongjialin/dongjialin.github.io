@@ -2,6 +2,7 @@
 title: PHP高精度计算函数
 date: 2021-04-10 00:00:00
 tags: [PHP]
+description: 小技巧
 ---
 
 bcadd — 加法

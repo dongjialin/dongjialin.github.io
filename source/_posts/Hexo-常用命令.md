@@ -3,6 +3,7 @@ title: Hexo 常用命令
 date: 2026-05-29 21:48:52
 tags: [Hexo, 教程]
 categories: 技术
+description: hexo简单的使用（主要我老忘，哈哈
 ---
 
 # Hexo 常用命令速查

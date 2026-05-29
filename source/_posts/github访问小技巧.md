@@ -2,6 +2,7 @@
 title: github访问小技巧
 date: 2021-03-11 00:00:00
 tags: [技术]
+description: github访问不了，怎么办
 ---
 
 访问以下地址，
